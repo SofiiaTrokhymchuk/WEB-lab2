@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="CSS, Tables">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS3. Таблиці</title>
+</head>
+
+<body>
+    <div class="container">
+        <table>
+            <caption>Завдання 1. Таблиця</caption>
+            <thead>
+                <tr class="header-row">
+                    <th>Трохимчук</th>
+                    <th colspan="2">Софія</th>
+                    <th class="last-column">Сергіївна</th>
+                </tr>
+            </thead>
+            <tbody class="second-info-row">
+                <tr>
+                    <td rowspan="2">IA-94</td>
+                    <td rowspan="2">ЛР-2</td>
+                    <td>Варіант 5</td>
+                    <td colspan="2" rowspan="2" class="last-column">&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+            </tbody>
+            <tr>
+                <td>&nbsp;</td>
+                <td colspan="2">&nbsp;</td>
+                <td class="last-column">&nbsp;</td>
+            </tr>
+        </table>
+        <p>Завдання 2. Малюнок</p>
+        <div class="drawing-container">
+            <div class="circle first"></div>
+            <div class="circle second"></div>
+            <div class="circle third"></div>
+        </div>
+    </div>
+</body>
+</html>
