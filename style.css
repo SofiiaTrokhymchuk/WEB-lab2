@@ -105,10 +105,9 @@ table > caption{
 .drawing-container-transform .circle.second{
     background-color: rgba(0, 255, 0, 0.5); 
     transform: translate(5rem, -3.5rem);
-    position: relative;
 }
 
 .drawing-container-transform .circle.third{
     background-color: rgba(0, 0, 255, 0.5);
-    transform: translate(-3rem, -14rem);
+    transform: translate(-3rem, -13.5rem);
 } 
