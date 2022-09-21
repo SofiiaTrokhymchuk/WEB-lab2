@@ -46,13 +46,16 @@ table > caption{
 }
 
 .drawing-container{
+    display: flex;
+}
+
+.drawing-container-position{
     position: relative;
     width: 18rem;
     height: 18rem;
-    margin: 0 auto;
 }
 
-.circle{
+.drawing-container-position .circle{
     position: absolute;
     width: 10rem;
     height: 10rem;
@@ -60,22 +63,52 @@ table > caption{
     border-radius: 50%;
 }
 
-.circle.first{
+.drawing-container-position .circle.first{
     left: 50%;
     transform: translate(-50%);
     background-color: rgba(255, 0, 0, 0.5);
 }
 
-.circle.second, .circle.third{
+.drawing-container-position .circle.second, .circle.third{
     top: 40%;
 }
 
-.circle.second{
+.drawing-container-position .circle.second{
     right: 0;
     background-color: rgba(0, 255, 0, 0.5);
 }
 
-.circle.circle.third{
+.drawing-container-position .circle.circle.third{
     left: 0;
     background-color: rgba(0, 0, 255, 0.5);
 }
+
+.drawing-container-transform{
+    width: 18rem;
+    height: 18rem;
+}
+
+.drawing-container-transform .circle{
+    width: 10rem;
+    height: 10rem;
+    border: 2px solid #000;
+    border-radius: 50%;
+    display:inline-block;
+}
+
+.drawing-container-transform .circle.first{
+    background-color: rgba(255, 0, 0, 0.5);
+    transform: translate(4.5rem, 0);
+    display: block;
+}
+
+.drawing-container-transform .circle.second{
+    background-color: rgba(0, 255, 0, 0.5); 
+    transform: translate(5rem, -3.5rem);
+    position: relative;
+}
+
+.drawing-container-transform .circle.third{
+    background-color: rgba(0, 0, 255, 0.5);
+    transform: translate(-3rem, -14rem);
+} 
